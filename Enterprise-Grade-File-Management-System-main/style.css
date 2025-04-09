@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #121212;
+    color: #ffffff;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Container */
+#app {
+    max-width: 500px;
+    margin: auto;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+/* Input Fields */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Error Message */
+#error-msg, #otp-error, #register-msg {
+    color: red;
+    font-size: 14px;
+}
+
+/* File Management Section */
+#fileOperations {
+    margin-top: 20px;
+}
+
+/* Uploaded File List */
+#fileList {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* Uploaded File Actions */
+#fileList p {
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* File Buttons */
+#fileList button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background: #28a745;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+#fileList button:hover {
+    background: #218838;
+}
+
+#fileList .delete-btn {
+    background: #dc3545;
+}
+
+#fileList .delete-btn:hover {
+    background: #c82333;
+}
+
+/* Logout Button */
+#logoutBtn {
+    background: #ff4444;
+}
+
+#logoutBtn:hover {
+    background: #cc0000;
+}
+
+/* New User Registration Link */
+.new-user {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.new-user a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.new-user a:hover {
+    text-decoration: underline;
+}
+
+/* Modal for Viewing Files */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 700px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+#file-viewer {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    input, button {
+        width: 100%;
+    }
+}
+
